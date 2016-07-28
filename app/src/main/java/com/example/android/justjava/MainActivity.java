@@ -18,11 +18,24 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
 
+    int quantity = 1;
+
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int quantity = 3;
+        display(quantity);
+        displayPrice(quantity * 5);
+    }
+
+    public void increment(View view) {
+        quantity = quantity + 1;
+        display(quantity);
+        displayPrice(quantity * 5);
+    }
+
+    public void decrement(View view) {
+        quantity = quantity - 1;
         display(quantity);
         displayPrice(quantity * 5);
     }
