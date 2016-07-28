@@ -35,14 +35,14 @@
         android:layout_width="48dp"
         android:text="+"
         android:textSize="16dp"
-        android:onClick="submitOrder"/>
+        android:onClick="increment"/>
 
     <Button
         android:layout_height="48dp"
         android:layout_width="48dp"
         android:text="-"
         android:textSize="16dp"
-        android:onClick="submitOrder"/>
+        android:onClick="decrement"/>
 
 
     </LinearLayout>
